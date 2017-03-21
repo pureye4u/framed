@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Framed</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    var data = {
+        title: "FRAMED",
+        page_title: "FRAMED",
+        blog_link: "/",
+        localog_link: "/location",
+        taglog_link: "/tag",
+        guestbook_link: "/guestbook",
+        articles: [
+
+            {
+                link: "/16",
+                title: "test",
+                category_link: "/category",
+                category: "분류없음",
+                date: "2017.03.21 17:49",
+                author: "Jud Lee",
+                text: $(`<div class="tt_article_useless_p_margin"><p>test</p><div style="width:100%;margin-top:30px;clear:both;height:30px"><div style="width:31px;float:left;"><a href="/toolbar/popup/abuseReport/?entryId=16" onclick="window.open(this.href, 'tistoryThisBlogPopup', 'width=550, height=510, toolbar=no, menubar=no, status=no, scrollbars=no'); return false;"><img style="border:0" src="//t1.daumcdn.net/tistory_admin/static/ico/ico_spam_report.png" alt="신고"></a></div></div></div>`).text(),
+                images: $('.imageblock > img', $(`<div class="tt_article_useless_p_margin"><p>test</p><div style="width:100%;margin-top:30px;clear:both;height:30px"><div style="width:31px;float:left;"><a href="/toolbar/popup/abuseReport/?entryId=16" onclick="window.open(this.href, 'tistoryThisBlogPopup', 'width=550, height=510, toolbar=no, menubar=no, status=no, scrollbars=no'); return false;"><img style="border:0" src="//t1.daumcdn.net/tistory_admin/static/ico/ico_spam_report.png" alt="신고"></a></div></div></div>`)).map(function(i, el){return el.src}),
+                content: encodeURIComponent(`<div class="tt_article_useless_p_margin"><p>test</p><div style="width:100%;margin-top:30px;clear:both;height:30px"><div style="width:31px;float:left;"><a href="/toolbar/popup/abuseReport/?entryId=16" onclick="window.open(this.href, 'tistoryThisBlogPopup', 'width=550, height=510, toolbar=no, menubar=no, status=no, scrollbars=no'); return false;"><img style="border:0" src="//t1.daumcdn.net/tistory_admin/static/ico/ico_spam_report.png" alt="신고"></a></div></div></div>`),
+                replies: [
+
+                    null
+                ]
+            },
+
+            {
+                link: "/15",
+                title: "test",
+                category_link: "/category",
+                category: "분류없음",
+                date: "2017.03.21 17:25",
+                author: "Jud Lee",
+                text: $(`<div class="tt_article_useless_p_margin"><p>test</p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:623px;;height:auto;max-width:100%"><img src="http://cfile1.uf.tistory.com/image/222DC13658D0E3920A5AC2" style="max-width:100%;height:auto" width="623" height="512" filename="profeel_20120112_big.jpg" filemime="image/jpeg" style=""""/></span></p><p><br /></p><div style="width:100%;margin-top:30px;clear:both;height:30px"><div style="width:31px;float:left;"><a href="/toolbar/popup/abuseReport/?entryId=15" onclick="window.open(this.href, 'tistoryThisBlogPopup', 'width=550, height=510, toolbar=no, menubar=no, status=no, scrollbars=no'); return false;"><img style="border:0" src="//t1.daumcdn.net/tistory_admin/static/ico/ico_spam_report.png" alt="신고"></a></div></div></div>`).text(),
+                images: $('.imageblock > img', $(`<div class="tt_article_useless_p_margin"><p>test</p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:623px;;height:auto;max-width:100%"><img src="http://cfile1.uf.tistory.com/image/222DC13658D0E3920A5AC2" style="max-width:100%;height:auto" width="623" height="512" filename="profeel_20120112_big.jpg" filemime="image/jpeg" style=""""/></span></p><p><br /></p><div style="width:100%;margin-top:30px;clear:both;height:30px"><div style="width:31px;float:left;"><a href="/toolbar/popup/abuseReport/?entryId=15" onclick="window.open(this.href, 'tistoryThisBlogPopup', 'width=550, height=510, toolbar=no, menubar=no, status=no, scrollbars=no'); return false;"><img style="border:0" src="//t1.daumcdn.net/tistory_admin/static/ico/ico_spam_report.png" alt="신고"></a></div></div></div>`)).map(function(i, el){return el.src}),
+                content: encodeURIComponent(`<div class="tt_article_useless_p_margin"><p>test</p><p style="text-align: center; clear: none; float: none;"><span class="imageblock" style="display:inline-block;width:623px;;height:auto;max-width:100%"><img src="http://cfile1.uf.tistory.com/image/222DC13658D0E3920A5AC2" style="max-width:100%;height:auto" width="623" height="512" filename="profeel_20120112_big.jpg" filemime="image/jpeg" style=""""/></span></p><p><br /></p><div style="width:100%;margin-top:30px;clear:both;height:30px"><div style="width:31px;float:left;"><a href="/toolbar/popup/abuseReport/?entryId=15" onclick="window.open(this.href, 'tistoryThisBlogPopup', 'width=550, height=510, toolbar=no, menubar=no, status=no, scrollbars=no'); return false;"><img style="border:0" src="//t1.daumcdn.net/tistory_admin/static/ico/ico_spam_report.png" alt="신고"></a></div></div></div>`),
+                replies: [
+
+                    null
+                ]
+            },
+
+            null
+        ]
+    };
+    </script>
+</head>
+<body>
+    <app-root>Loading...</app-root>
+</body>
+</html>

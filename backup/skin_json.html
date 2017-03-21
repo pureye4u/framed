@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Framed</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    var data = {
+        title: "[##_title_##]",
+        page_title: "[##_page_title_##]",
+        blog_link: "[##_blog_link_##]",
+        localog_link: "[##_localog_link_##]",
+        taglog_link: "[##_taglog_link_##]",
+        guestbook_link: "[##_guestbook_link_##]",
+        articles: [
+            <s_article_rep>
+            {
+                link: "[##_article_rep_link_##]",
+                title: "[##_article_rep_title_##]",
+                category_link: "[##_article_rep_category_link_##]",
+                category: "[##_article_rep_category_##]",
+                date: "[##_article_rep_date_##]",
+                author: "[##_article_rep_author_##]",
+                text: $(`[##_article_rep_desc_##]`).text(),
+                images: $('.imageblock > img', $(`[##_article_rep_desc_##]`)).map(function(i, el){return el.src}),
+                content: encodeURIComponent(`[##_article_rep_desc_##]`),
+                replies: [
+                    <s_rp_container><s_rp_rep>
+                    {
+                        id: "[##_rp_rep_id_##]",
+                        name: "[##_rp_rep_name_##]",
+                        logo: "[##_rp_rep_logo_##]",
+                        date: "[##_rp_rep_date_##]",
+                        desc: "[##_rp_rep_desc_##]",
+                        link: "[##_rp_rep_link_##]"
+                        replies: [
+                            <s_rp2_container><s_rp2_rep>
+                            {
+                                id: "[##_rp_rep_id_##]",
+                                name: "[##_rp_rep_name_##]",
+                                logo: "[##_rp_rep_logo_##]",
+                                date: "[##_rp_rep_date_##]",
+                                desc: "[##_rp_rep_desc_##]",
+                                link: "[##_rp_rep_link_##]"
+                            },
+                            </s_rp2_rep></s_rp2_container>
+                            null
+                        ]
+                    },
+                    </s_rp_rep></s_rp_container>
+                    null
+                ]
+            },
+            </s_article_rep>
+            null
+        ]
+    };
+
+    </script>
+</head>
+<body>
+    <app-root>Loading...</app-root>
+</body>
+</html>

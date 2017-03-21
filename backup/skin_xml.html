@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Framed</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <app-root>Loading...</app-root>
+</body>
+<script>
+var xml = `
+    <data>
+        <title><![CDATA[[##_title_##]]]></title>
+        <page_title><![CDATA[[##_page_title_##]]]></page_title>
+        <blog_link><![CDATA[[##_blog_link_##]]]></blog_link>
+        <localog_link><![CDATA[[##_localog_link_##]]]></localog_link>
+        <taglog_link><![CDATA[[##_taglog_link_##]]]></taglog_link>
+        <guestbook_link><![CDATA[[##_guestbook_link_##]]]></guestbook_link>
+        <s_article_rep>
+        <article>
+            <article_link><![CDATA[[##_article_rep_link_##]]]></article_link>
+            <article_title><![CDATA[[##_article_rep_title_##]]]></article_title>
+            <article_category_link><![CDATA[[##_article_rep_category_link_##]]]></article_category_link>
+            <article_category><![CDATA[[##_article_rep_category_##]]]></article_category>
+            <article_date><![CDATA[[##_article_rep_date_##]]]></article_date>
+            <article_author><![CDATA[[##_article_rep_author_##]]]></article_author>
+            <article_content><![CDATA[[##_article_rep_desc_##]]]></article_content>
+            <article_replies>
+                <s_rp_container>
+                <s_rp_rep>
+                <reply>
+                    <reply_level>1</reply_level>
+                    <reply_id><![CDATA[[##_rp_rep_id_##]]]></reply_id>
+                    <reply_name><![CDATA[[##_rp_rep_name_##]]]></reply_name>
+                    <reply_logo><![CDATA[[##_rp_rep_logo_##]]]></reply_logo>
+                    <reply_date><![CDATA[[##_rp_rep_date_##]]>]</reply_date>
+                    <reply_desc><![CDATA[[##_rp_rep_desc_##]]]></reply_desc>
+                    <reply_link><![CDATA[[##_rp_rep_link_##]]]></reply_link>
+                </reply>
+                <s_rp2_container>
+                <s_rp2_rep>
+                <reply>
+                    <reply_level>2</reply_level>
+                    <reply_id><![CDATA[[##_rp_rep_id_##]]]></reply_id>
+                    <reply_name><![CDATA[[##_rp_rep_name_##]]]></reply_name>
+                    <reply_logo><![CDATA[[##_rp_rep_logo_##]]]></reply_logo>
+                    <reply_date><![CDATA[[##_rp_rep_date_##]]]></reply_date>
+                    <reply_desc><![CDATA[[##_rp_rep_desc_##]]]></reply_desc>
+                    <reply_link><![CDATA[[##_rp_rep_link_##]]]></reply_link>
+                </reply>
+                </s_rp2_rep>
+                </s_rp2_container>
+                </s_rp_rep>
+                </s_rp_container>
+            </article_replies>
+        </article>
+        </s_article_rep>
+    </data>`;
+console.log($.parseXML(xml))
+</script>
+</html>
